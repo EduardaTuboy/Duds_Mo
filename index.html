@@ -107,6 +107,9 @@
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet" />
+
+    <!-- Duds & Mo Style-->
+    <link href="styles.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -209,7 +212,8 @@
 
     <!-- Header -->
     <header data-bs-theme="dark">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <nav class="navbar navbar-expand-md fixed-top duds_mo_bgc">
+        <img id="logo" src="./assets/pictures/duds_mo.png" />
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Duds & Mo Productions</a>
           <button
@@ -251,7 +255,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="duds_mo_bgc">
       <!-- Carousel -->
       <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -382,6 +386,12 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+      <!-- Thought bubble -->
+      <img
+        src="assets/pictures/thinking.png"
+        style="width: 98.9vw; margin-top: -11vh"
+      />
 
       <!-- Marketing messaging and featurettes; Wrap the rest of the page in another container to center all the content. -->
       <div class="container marketing">

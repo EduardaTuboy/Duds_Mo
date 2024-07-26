@@ -1,0 +1,17 @@
+:root {
+  --main-bg-color-light: #fe1896;
+  --main-bg-color-dark: #fe1896;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+[data-bs-theme="light"] .duds_mo_bgc {
+  background-color: var(--main-bg-color-light);
+}
+
+[data-bs-theme="dark"] .duds_mo_bgc {
+  background-color: var(--main-bg-color-dark);
+}
