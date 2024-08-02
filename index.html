@@ -374,15 +374,26 @@
 
       <!-- Thought bubble -->
       <img
-        src="assets/pictures/thinking.png"
-        style="width: 98.9vw; margin-top: -11vh"
+        src="assets/pictures/duds_thinking.png"
+        style="
+          width: 98.9vw;
+          margin-top: -350px;
+          z-index: 11;
+          position: relative;
+        "
+        id="thought"
       />
 
-      <!-- Placegolder for our 'thinking' drawing -->
-      <img
-        src="assets/pictures/bobitos.png"
-        style="margin: 0 25vw 50px 25vw; width: 50vw"
-      />
+      <!-- Social media -->
+      <div class="row social">
+        <a href="https://www.instagram.com/duds_mo?igsh=MTk2ejBsMHM4ODhzdg=="
+          ><img src="assets/pictures/duds_mo.png"
+        /></a>
+        <a href=""><img src="assets/pictures/duds_mo.png" /></a>
+        <a href="https://www.youtube.com/channel/UCGYyPDQwVu0wZw6ApNvMPrw"
+          ><img src="assets/pictures/duds_mo.png"
+        /></a>
+      </div>
 
       <!-- Section sent to article_exemple.html for now -->
 
@@ -396,5 +407,20 @@
       </footer>
     </main>
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Function to change the image source
+      function changeImage() {
+        const img = document.getElementById("thought");
+        if (img.src.includes("duds_thinking.png")) {
+          img.src = "assets/pictures/mo_thinking.png";
+        } else {
+          img.src = "assets/pictures/duds_thinking.png";
+        }
+      }
+
+      // Change image every 5 seconds (5000 milliseconds)
+      setInterval(changeImage, 5000);
+    </script>
   </body>
 </html>
