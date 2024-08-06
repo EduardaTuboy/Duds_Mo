@@ -8,6 +8,10 @@
   height: 5rem;
 }
 
+.nav-link {
+  color: black;
+}
+
 /* Font */
 * {
   font-family: "Josefin Sans", sans-serif;
