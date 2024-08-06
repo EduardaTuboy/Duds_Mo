@@ -34,3 +34,7 @@
   border-radius: 50%;
   object-fit: cover;
 }
+
+.custom_size > .carousel-inner > .carousel-item {
+  height: 800px;
+}

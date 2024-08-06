@@ -6,11 +6,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
-    <meta
-      name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
-    />
-    <meta name="generator" content="Hugo 0.122.0" />
     <title>Duds & Mo</title>
 
     <link
@@ -102,10 +97,6 @@
 
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
-      }
-
-      .hover_gray:hover {
-        background-color: gray;
       }
     </style>
 
@@ -261,7 +252,11 @@
 
     <main class="duds_mo_bgc">
       <!-- Carousel -->
-      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div
+        id="myCarousel"
+        class="carousel slide mb-6 custom_size"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-indicators">
           <!-- Carousel Navegation buttons -->
           <button
@@ -291,13 +286,13 @@
           <div class="carousel-item active" style="background-color: black">
             <img
               src="assets/pictures/gloome.png"
-              style="width: 60vw; margin: 2rem 20vw"
+              style="width: 800px; margin: 50px calc((100vw - 800px) / 2)"
             />
 
             <div class="container">
               <div class="carousel-caption text-start">
                 <h1 style="color: white">Eye Gloome</h1>
-                <p class="opacity-75" style="color: white">
+                <p style="color: white" class="opacity-75">
                   Our greatest adventure so far
                 </p>
                 <p>
@@ -310,11 +305,6 @@
           </div>
           <!-- Carousel item: Stickers -->
           <div class="carousel-item" style="background-color: wheat">
-            <img
-              src="assets/pictures/adesivos.png"
-              style="width: 60vw; margin: 2rem 20vw"
-            />
-
             <div class="container">
               <div class="carousel-caption text-start">
                 <h1 style="color: red">Stickers</h1>
@@ -329,11 +319,6 @@
           </div>
           <!-- Carousel item: Games -->
           <div class="carousel-item" style="background-color: black">
-            <img
-              src="assets/pictures/fog.png"
-              style="width: 60vw; margin: 2rem 20vw"
-            />
-
             <div class="container">
               <div class="carousel-caption text-start">
                 <h1 style="color: red">Games</h1>
@@ -351,10 +336,11 @@
         </div>
         <!-- Carousel back button -->
         <button
-          class="carousel-control-prev hover_gray"
+          class="carousel-control-prev"
           type="button"
           data-bs-target="#myCarousel"
           data-bs-slide="prev"
+          style="z-index: 20"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -362,10 +348,11 @@
 
         <!-- Carousel next button -->
         <button
-          class="carousel-control-next hover_gray"
+          class="carousel-control-next"
           type="button"
           data-bs-target="#myCarousel"
           data-bs-slide="next"
+          style="z-index: 20"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
@@ -377,7 +364,7 @@
         src="assets/pictures/duds_thinking.png"
         style="
           width: 98.9vw;
-          margin-top: -350px;
+          margin-top: -530px;
           z-index: 11;
           position: relative;
         "
@@ -421,7 +408,7 @@
       }
 
       // Change image every 5 seconds (5000 milliseconds)
-      setInterval(changeImage, 3000);
+      setInterval(changeImage, 2000);
     </script>
   </body>
 </html>
