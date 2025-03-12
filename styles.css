@@ -3,6 +3,13 @@
   --main-bg-color-dark: #fe1896;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 #logo {
   width: 5rem;
   height: 5rem;
@@ -42,21 +49,21 @@
 }
 
 .social {
-  margin-top: 20px;
+  margin: auto auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .social a {
   width: 180px;
-  margin: 0 20px;
   padding: 0;
+  margin: 5px;
 }
 
 .social img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
+  width: 10vh;
+  height: 10vh;
+  border-radius: 5vh;
   object-fit: cover;
 }
 
