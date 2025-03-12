@@ -35,17 +35,13 @@ body {
   font-size: 18px;
 }
 
-/* #logo {
+#logo {
   width: 100px;
   height: 100px;
-} */
-
-[data-bs-theme="light"] .duds_mo_bgc {
-  background-color: var(--main-bg-color-light);
 }
 
-[data-bs-theme="dark"] .duds_mo_bgc {
-  background-color: var(--main-bg-color-dark);
+.duds_mo_bgc {
+  background-color: var(--main-bg-color-light);
 }
 
 .social {
@@ -58,6 +54,10 @@ body {
   width: 180px;
   padding: 0;
   margin: 5px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
 }
 
 .social img {
@@ -65,6 +65,7 @@ body {
   height: 10vh;
   border-radius: 5vh;
   object-fit: cover;
+  margin-right: 10px;
 }
 
 .custom_size > .carousel-inner > .carousel-item {
